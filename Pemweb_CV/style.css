@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico');
+
+html,body{
+    font-family: 'Ubuntu';font-size: 15px; font-weight: bold;
+    margin: auto;
+}
+nav{
+    font-family: 'Ubuntu';font-size: 15px; font-weight: bold;
+    margin: auto;
+}
+header{
+    font-family: 'Pacifico';font-size: 15px; position: relative;
+}
+p {
+    text-align: center;
+    font-size: 40px;
+    color:rgb(239, 121, 121)
+}
+
+a {
+    color:black;
+}
+
+body li:hover{
+    width:fit-content;
+    background-color: #FFA7CA;
+}
+i {
+    color:rgb(239, 121, 121);
+}
+/* body a:hover{
+    color: #FFA7CA;
+} */
+h1 {
+    font-size:25px;
+    margin-left:200px;
+}
+h2 {
+    color:rgb(239, 121, 121);
+    font-size:20px;
+    margin-left:200px;
+}
+
+    .profile {
+                display:block;
+                width: 1000px;
+                margin: auto;
+                margin-top: 100px;
+                margin-bottom: 130px;
+    }
+    .image {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 200px;
+            overflow: hidden;
+    }
+    .name {
+            font-size: 100%;
+            margin: auto;
+    }
+    .name2 {
+        text-align: center;
+        font-size: 25px;
+        margin: auto;
+        font-family: Ubuntu;
+    }
+
+    .container {
+               display:block;
+               font-size: 100%;
+               background-color: #FFDEEB;
+    }
+    .container2 {
+        display:block;
+        font-size: 100%;
+        background-color: white;
+}
+
+    .animated-gif{
+            margin-left: 20px;
+            float: left;
+      }
+    .animated-gif2{
+        margin-right: 50px;
+        float: right;
+    }
+      .animated-gif3{
+        margin-left: 380px;
+        float: left;
+        margin-right: 15px;
+}
+    .description {
+                display: inline;
+                margin-right: 200px;
+                margin-top: 20px;
+                line-height: 1.6;
+                word-spacing: 1;
+    }
+    .description2 {
+        margin-left: 200px;
+        margin-top: 20px;
+        line-height: 1.6;
+        word-spacing: 1;
+}
+
+ul {
+    list-style-type: square;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFDEEB;
+}
+
+nav .ul3{
+    float:right;
+}
+
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    color: #222222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;          
+}
+nav li a:hover {
+    background-color: #FFA7CA;
+}
