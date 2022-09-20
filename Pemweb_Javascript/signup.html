@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Page</title>
+</head>
+<body>
+    <h1 style="text-align:center;"> CREATE YOUR ACCOUNT </h1>
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td> Name </td>
+            <td><input type="text" placeholder="Enter Your Name" id="n1"></td>
+        </tr>
+        <tr>
+            <td> Email </td>
+            <td><input type="text" placeholder="Enter Your Email ID" id="e1"></td>
+        </tr>
+        <tr>
+            <td> Set Password </td>
+            <td><input type="password" placeholder="Set a Password" id="p1"></td>
+        </tr>
+        <tr>
+            <td> Confirm Password </td>
+            <td><input type="password" placeholder="Confirm Your Password" id="p2"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Create" onclick="create_account()"></td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        function create_account() {
+            var n = document.getElementById("n1").value;
+            var e = document.getElementById("e1").value;
+            var p = document.getElementById("p1").value;
+            var cp = document.getElementById("p2").value;
+
+            var letters = /^[A-Za-z]+$/;  
+            var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; 
+
+            if(n==''||e==''||p==''||p2==''){
+                alert("Enter each deteails correctly");
+            }
+            else if(!letters.test(n)) {
+                alert('Name is incorrect must contain alphabets only');
+            }
+            else if(!email_val.test(e)) {
+                alert('Invalid Email format please enter valid email');
+            }
+            else if(p!=cp) {
+                alert("Password not matching");
+            }
+            else if(document.getElementById("p1").value.length > 12) {
+                alert("Password maximum length is 12");
+            }
+            else if(document.getElementById("p1").value.length < 6) {
+                alert("Password minimum length is 6");
+            }
+            else {
+                alert("Your account has been created successfully... Redirecting to JavaTpoint.com");
+                window.location="https://www.javatpoint.com/";
+            }
+        }
+    </script>
+</body>
+</html>
