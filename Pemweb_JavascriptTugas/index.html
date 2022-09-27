@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Dynamic Dropdown List
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <script>  
+        function product() {  
+            var list = document.getElementById("list");  
+            var listindex = list.options[list.selectedIndex].text;
+            switch (listindex)
+            {
+                case "Genre" :
+                    document.getElementById("By").options[0]=new Option("Sort By","");
+                    document.getElementById("By").options[1]=new Option("Action","Action");
+                    document.getElementById("By").options[2]=new Option("Adventure","Adventure");
+                    document.getElementById("By").options[3]=new Option("Horror","Horror");
+                    document.getElementById("By").options[4]=new Option("Mystery","Mystery");
+                    document.getElementById("By").options[5]=new Option("Romance","Romance");
+                    break;
+                case "Status" :
+                    document.getElementById("By").options[0]=new Option("Sort By","");
+                    document.getElementById("By").options[1]=new Option("Ongoing","Ongoing");
+                    document.getElementById("By").options[2]=new Option("Finished Airing","Finished Airing");
+                    document.getElementById("By").options[3]=new Option("Upcoming","Upcoming");
+                    break;
+                case "Year" :
+                    document.getElementById("By").options[0]=new Option("Sort By","");
+                    document.getElementById("By").options[1]=new Option("Latest","Latest");
+                    document.getElementById("By").options[2]=new Option("2022","2022");
+                    document.getElementById("By").options[3]=new Option("2021","2021");
+                    document.getElementById("By").options[4]=new Option("...","...");
+                    document.getElementById("By").options[5]=new Option("Oldest","Oldest");
+                    break;
+            }  
+        }  
+    </script>  
+
+    <body>
+        <header>
+            Search Anime
+        </header>
+
+        <select id = "list" onchange = "product()">  
+            <option>Sort</option>  
+            <option>Genre</option>  
+            <option>Status</option>  
+            <option>Year</option>  
+        </select>
+
+        <select id = "By">
+            <option>By</option> 
+        </select>
+
+        <!-- <ul id="dropdown_menu">
+            <li class="main">Sort By</li>
+            <li class="main">Genre
+                <ul class="sub">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Crime</a></li>
+                    <li><a href="#">Mystery</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                    <li><a href="#">Horror</a></li>
+                    <li><a href="#">Romance</a></li>
+                </ul>
+            </li>
+            <li class="main">Status
+                <ul class="sub">
+                    <li><a href="#">Ongoing</a></li>
+                    <li><a href="#">Finished Airing</a></li>
+                    <li><a href="#">Upcoming</a></li>
+                </ul>
+            </li>
+            <li class="main">Year
+                <ul class="sub">
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">2022</a></li>
+                    <li><a href="#">2021</a></li>
+                    <li><a href="#">2020</a></li>
+                    <li><a href="#">2019</a></li>
+                    <li><a href="#">2018</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">Oldest</a></li>
+                </ul>
+            </li> -->
+    </body>
+</html>

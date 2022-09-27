@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+header {
+    font-family: 'Ubuntu';
+    font-size: 25px; 
+    position: relative;
+    font-weight: bold;
+    margin: auto;
+    color: purple;
+}
+
+#dropdown_menu .main:hover > .sub{
+    display: block;
+}
+
+#list, #By{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    text-align: center;
+    background-color: plum;
+    color: purple;
+    border: none;
+    cursor: pointer;
+}
