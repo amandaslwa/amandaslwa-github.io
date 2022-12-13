@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+.formContainer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    height: auto;
+    padding: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Ubuntu;
+    border-style: solid;
+    border-color: purple;
+    border-width: 3px;
+  }  
+
+h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    color: purple;
+  }
+  
+h3 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    color: purple;
+  }
+  
+h2 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    color: purple;
+  }
+
+h3 {
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bolder;
+    color: purple;
+  }
+
+
+header {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    margin: 5px 0px 15px 0px;
+  }
+  
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 5px 9px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 5px 9px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary {
+    margin: 0;
+    font-weight: 400;
+    color: whitesmoke;
+    background-color: purple;
+    border-color: purple;
+    align-items: center;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  submit:hover {
+    color: whitesmoke;
+    background-color: burlywood;
+    border-color: burlywood;  
+  }
+
+  
+  .btn-primary:hover {
+    color: whitesmoke;
+    background-color: burlywood;
+    border-color: burlywood;
+  }
+
+  #list {
+    font-family: Ubuntu;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #list td, #list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #list tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #list tr:nth-child(odd){background-color: white;}
+
+  #list tr:hover {background-color: purple; color: white;}
+  
+  #list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: plum;
+    color: purple;
+  }
